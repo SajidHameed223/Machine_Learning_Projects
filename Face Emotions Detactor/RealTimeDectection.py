@@ -11,6 +11,7 @@ weights_path = os.path.join("Face Emotions Detactor", "emotiondetector.h5")
 
 print("Loading model...")
 with open(json_path, "r") as json_file:
+    
     model_json = json_file.read()
 model = model_from_json(model_json)
 model.load_weights(weights_path)
